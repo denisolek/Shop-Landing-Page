@@ -11,9 +11,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="js/cssrefresh.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -94,6 +94,7 @@
         <div class="row">
           <div class="section-content">
             <div class="col-lg-6">
+              <i class="fa fa-camera-retro"></i> fa-camera-retro
               <h3>Suspendisse a pellentesque dui, non felis.</h3>
               <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
@@ -126,13 +127,64 @@
       <div class="container">
         <div class="row">
           <div class="section-content">
-            <div class="col-lg-6">
-              <h3>Suspendisse a pellentesque dui, non felis.</h3>
-              <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-lg-6 offset-lg-3 centered">
+              <h1>Kontakt</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="col-lg-6">
-              <p>Tu bedzie obrazek</p>
+            <div class="row col-lg-6 contact-info">
+              <!-- Phone numbers -->
+              <div class="contact-box col-md-12">
+                <div class="col-md-2">
+                  <img src="img/icon_phone.png" class="icon_phone" alt="icon.phone">
+                </div>
+                <div class="content-box col-md-10">
+                  <div class="col-md-12">
+                    <h4>Numer telefonu</h4>
+                  </div>
+                  <div class="col-md-12">
+                    +48 501 187 033<br />
+                    +48 510 297 579
+                  </div>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="contact-box col-md-12">
+                <div class="col-md-2">
+                  <img src="img/icon_envelope.png" class="icon_envelope" alt="icon.envelope">
+                </div>
+                <div class="content-box col-md-10">
+                  <div class="col-md-12">
+                    <h4>Email</h4>
+                  </div>
+                  <div class="col-md-12">
+                    oltex24@op.pl
+                  </div>
+                </div>
+              </div>
+              <!-- Addresses -->
+              <div class="contact-box col-md-12">
+                <div class="col-md-2">
+                  <img src="img/icon_map.png" class="icon_map" alt="icon.map">
+                </div>
+                <div class="content-box col-md-10">
+                  <div class="col-md-12">
+                    <h4>Adresy sklepów</h4>
+                  </div>
+
+                  <div class="col-md-6">
+                    Hala targowa Orbi<br />
+                    66-400 Gorzów Wlkp.<br />
+                    ul. Marcinkowskiego 90A
+                  </div>
+                  <div class="col-md-6">
+                    Kupiec Gorzowski<br />
+                    66-400 Gorzów Wlkp.<br />
+                    ul. Witosa 50
+                  </div>
+                </div>
+              </div>
             </div>
+            <div id="map-container" class="col-lg-6"></div>
           </div>
         </div>
       </div>
@@ -181,5 +233,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrollPosStyler.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/google_maps.js"></script>
+    <script type="text/javascript" src="js/cssrefresh.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKxCErWjEDfsKjCOLaWU98VHO1Cp0NDbI&callback=initMap"
+    async defer></script>
   </body>
 </html>

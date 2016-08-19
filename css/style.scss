@@ -155,6 +155,44 @@ img {
   background: darken($baseBg, 3%);
 }
 
+/* Contact section */
+@media(min-width:992px) {
+  #contact  {
+    h2{
+      margin-bottom: 30px;
+    }
+    .contact-box {
+      padding: 20px;
+    }
+    #map-container {
+      height: 400px;
+      margin-top: 20px;
+    }
+    .map-image {
+      width: 20px;
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .icon_phone {
+      padding-left: 8px;
+      padding-top: 8px;
+    }
+    .icon_envelope {
+      padding-left: 3px;
+    }
+    .icon_map {
+      padding-top: 33px;
+    }
+  }
+}
+
+
+.centered {
+  text-align: center;
+}
+
+/* Footer */
 #site-footer {
   background: $baseDark;
   color: white;

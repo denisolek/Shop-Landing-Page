@@ -118,6 +118,30 @@ img {
 .bg-dark {
   background: #eaeaea; }
 
+/* Contact section */
+@media (min-width: 992px) {
+  #contact h2 {
+    margin-bottom: 30px; }
+  #contact .contact-box {
+    padding: 20px; }
+  #contact #map-container {
+    height: 400px;
+    margin-top: 20px; }
+  #contact .map-image {
+    width: 20px; }
+  #contact .contact-info {
+    margin-top: 20px; }
+  #contact .icon_phone {
+    padding-left: 8px;
+    padding-top: 8px; }
+  #contact .icon_envelope {
+    padding-left: 3px; }
+  #contact .icon_map {
+    padding-top: 33px; } }
+.centered {
+  text-align: center; }
+
+/* Footer */
 #site-footer {
   background: #212121;
   color: white;
