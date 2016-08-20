@@ -1,3 +1,4 @@
+// Navbar scroll active
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
@@ -37,3 +38,16 @@ function onScroll(event){
         }
     });
 }
+
+// Owl carousel
+$(document).ready(function() {
+  $('#owl-licences').owlCarousel({
+      loop:true,
+      nav:false,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplaySpeed: 1500,
+      smartSpeed: 1500
+  })
+});

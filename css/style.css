@@ -12,6 +12,23 @@ img {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
+/* Global changes */
+.oltex-button {
+  background-color: #e68900;
+  border-color: #e68900; }
+
+.oltex-button:hover {
+  background-color: #d68000;
+  border-color: #d68000; }
+
+.oltex-button .btn-success.active, .btn-success:active {
+  background-color: #d68000 !important;
+  border-color: #d68000 !important; }
+
+.oltex-button .btn-success.focus, .btn-success:focus {
+  background-color: #d68000 !important;
+  border-color: #d68000 !important; }
+
 /* Navbar */
 @media (max-width: 992px) {
   .navbar .navbar-nav > .nav-item {
@@ -101,9 +118,6 @@ img {
   width: 100%;
   display: flex;
   align-items: center; }
-  #main .btn-success {
-    background-color: #e68900;
-    border-color: #e68900; }
 
 #main-caption {
   max-width: 50rem;
@@ -118,6 +132,12 @@ img {
 .bg-dark {
   background: #eaeaea; }
 
+/* Licences section */
+#owl-licences .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
 /* Contact section */
 @media (min-width: 992px) {
   #contact h2 {
@@ -129,15 +149,12 @@ img {
     margin-top: 20px; }
   #contact .map-image {
     width: 20px; }
-  #contact .contact-info {
-    margin-top: 20px; }
-  #contact .icon_phone {
-    padding-left: 8px;
-    padding-top: 8px; }
-  #contact .icon_envelope {
-    padding-left: 3px; }
-  #contact .icon_map {
-    padding-top: 33px; } }
+  #contact .icon-img {
+    width: 32px;
+    height: 32px; }
+  #contact textarea {
+    min-height: 150px;
+    resize: none; } }
 .centered {
   text-align: center; }
 

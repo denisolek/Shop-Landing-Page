@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
@@ -94,12 +96,15 @@
         <div class="row">
           <div class="section-content">
             <div class="col-lg-6">
-              <i class="fa fa-camera-retro"></i> fa-camera-retro
               <h3>Suspendisse a pellentesque dui, non felis.</h3>
               <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-lg-6">
-              <p>Tu bedzie obrazek</p>
+              <div id="owl-licences" class="owl-carousel owl-theme">
+                <div class="item"><img src="img/licencje_1.png" alt="Licences 1"></div>
+                <div class="item"><img src="img/licencje_2.png" alt="Licences 2"></div>
+                <div class="item"><img src="img/licencje_3.png" alt="Licences 3"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -123,6 +128,7 @@
       </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -131,15 +137,12 @@
               <h1>Kontakt</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="row col-lg-6 contact-info">
+            <div class="row col-lg-12 contact-info">
               <!-- Phone numbers -->
-              <div class="contact-box col-md-12">
-                <div class="col-md-2">
-                  <img src="img/icon_phone.png" class="icon_phone" alt="icon.phone">
-                </div>
-                <div class="content-box col-md-10">
+              <div class="contact-box col-md-3">
+                <div class="content-box col-md-12">
                   <div class="col-md-12">
-                    <h4>Numer telefonu</h4>
+                    <h4><img src="img/icon_phone.png" class="icon-img" alt="icon.phone"> Telefon</h4>
                   </div>
                   <div class="col-md-12">
                     +48 501 187 033<br />
@@ -148,13 +151,10 @@
                 </div>
               </div>
               <!-- Email -->
-              <div class="contact-box col-md-12">
-                <div class="col-md-2">
-                  <img src="img/icon_envelope.png" class="icon_envelope" alt="icon.envelope">
-                </div>
-                <div class="content-box col-md-10">
+              <div class="contact-box col-md-3">
+                <div class="content-box col-md-12">
                   <div class="col-md-12">
-                    <h4>Email</h4>
+                    <h4><img src="img/icon_envelope.png" class="icon-img" alt="icon.envelope"> Email</h4>
                   </div>
                   <div class="col-md-12">
                     oltex24@op.pl
@@ -162,15 +162,11 @@
                 </div>
               </div>
               <!-- Addresses -->
-              <div class="contact-box col-md-12">
-                <div class="col-md-2">
-                  <img src="img/icon_map.png" class="icon_map" alt="icon.map">
-                </div>
-                <div class="content-box col-md-10">
+              <div class="contact-box col-md-6">
+                <div class="content-box col-md-12">
                   <div class="col-md-12">
-                    <h4>Adresy sklepów</h4>
+                    <h4><img src="img/icon_map.png" class="icon-img" alt="icon.map"> Adresy sklepów</h4>
                   </div>
-
                   <div class="col-md-6">
                     Hala targowa Orbi<br />
                     66-400 Gorzów Wlkp.<br />
@@ -182,6 +178,25 @@
                     ul. Witosa 50
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="col-lg-6 contact-form">
+              <div class="col-lg-12">
+                <form>
+                  <div class="form-group">
+                    <label for="inputName">Imię i nazwisko</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Podaj imię i nazwisko">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Adres email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Podaj adres email">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputMessage">Treść wiadomości</label>
+                    <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-success oltex-button">Submit</button>
+                </form>
               </div>
             </div>
             <div id="map-container" class="col-lg-6"></div>
@@ -234,7 +249,8 @@
     <script src="js/scrollPosStyler.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/google_maps.js"></script>
-    <script type="text/javascript" src="js/cssrefresh.js"></script>
+    <!-- <script type="text/javascript" src="js/cssrefresh.js"></script> -->
+    <script src="js/owl.carousel.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKxCErWjEDfsKjCOLaWU98VHO1Cp0NDbI&callback=initMap"
     async defer></script>
   </body>
