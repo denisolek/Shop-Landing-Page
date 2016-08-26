@@ -24,11 +24,12 @@ img {
 .oltex-button {
   background-color: darken($baseOrange, 5%);
   border-color: darken($baseOrange, 5%);
+  border-radius: 0;
 }
 
 .oltex-button:hover {
-  background-color: darken($baseOrange, 8%);
-  border-color: darken($baseOrange, 8%);
+  background-color: darken($baseOrange, 8%) !important;
+  border-color: darken($baseOrange, 8%) !important;
 }
 
 .oltex-button .btn-success.active, .btn-success:active {
@@ -41,6 +42,9 @@ img {
     border-color: darken($baseOrange, 8%) !important;
 }
 
+.form-control {
+  border-radius: 0;
+}
 
 
 /* Navbar */
@@ -150,7 +154,7 @@ img {
 
 /* Main */
 #main {
-  background: url(../img/bg_img4.jpg) center center no-repeat;
+  background: url(../img/bg_img8.png) center center no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -163,6 +167,9 @@ img {
   margin: 0 auto;
   text-align: center;
   color: #fff;
+  h1 {
+    font-weight: 400;
+  }
 }
 
 .section-content {
@@ -172,6 +179,15 @@ img {
 
 .bg-dark {
   background: darken($baseBg, 3%);
+}
+
+/* Offer section */
+#offer {
+  .offer-image {
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+  }
 }
 
 /* Licences section */
@@ -204,6 +220,12 @@ img {
     textarea {
       min-height: 150px;
       resize: none;
+    }
+    .help-block {
+      font-size: 0.8rem;
+    }
+    #msgSubmit {
+      margin-top: 30px;
     }
   }
 }

@@ -33,7 +33,7 @@
             <a class="nav-link" href="#about">O nas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#offert">Oferta</a>
+            <a class="nav-link" href="#offer">Oferta</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#licenses">Licencje</a>
@@ -74,14 +74,24 @@
       </div>
     </section>
 
-    <section id="offert" class="bg-dark">
+    <section id="offer" class="bg-dark">
       <div class="container">
         <div class="row">
           <div class="section-content">
             <div class="col-lg-12">
-                <h6>Lorem ipsum</h6>
-                <h3>Suspendisse a pellentesque dui, non felis.</h3>
-                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="col-lg-8 offset-lg-2 centered">
+                <h1>Oferta</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-lg-4"><img src="img/offer/ceramika.png" alt="offer.ceramika" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/koce.png" alt="offer.koce" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/reczniki.png" alt="offer.reczniki" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/kwiaty.png" alt="offer.kwiaty" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/narzuty.png" alt="offer.narzuty" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/obrusy.png" alt="offer.obrusy" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/posciel_przescieradla.png" alt="offer.posciel_przescieradla" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/poduszki_poszewki.png" alt="offer.poduszki_poszewki" class="offer-image"></div>
+              <div class="col-lg-4"><img src="img/offer/koldry_poduszki.png" alt="offer.koldry_poduszki" class="offer-image"></div>
             </div>
             <div class="col-lg-12">
 
@@ -101,9 +111,10 @@
             </div>
             <div class="col-lg-6">
               <div id="owl-licences" class="owl-carousel owl-theme">
-                <div class="item"><img src="img/licencje_1.png" alt="Licences 1"></div>
-                <div class="item"><img src="img/licencje_2.png" alt="Licences 2"></div>
-                <div class="item"><img src="img/licencje_3.png" alt="Licences 3"></div>
+                <div class="item"><img src="img/licences/licencje_1.png" alt="Licences.1"></div>
+                <div class="item"><img src="img/licences/licencje_2.png" alt="Licences.2"></div>
+                <div class="item"><img src="img/licences/licencje_3.png" alt="Licences.3"></div>
+                <div class="item"><img src="img/licences/licencje_4.png" alt="Licences.4"></div>
               </div>
             </div>
           </div>
@@ -145,8 +156,8 @@
                     <h4><img src="img/icon_phone.png" class="icon-img" alt="icon.phone"> Telefon</h4>
                   </div>
                   <div class="col-md-12">
-                    +48 501 187 033<br />
-                    +48 510 297 579
+                    +48 510 297 579<br />
+                    +48 501 187 033
                   </div>
                 </div>
               </div>
@@ -168,11 +179,13 @@
                     <h4><img src="img/icon_map.png" class="icon-img" alt="icon.map"> Adresy sklepów</h4>
                   </div>
                   <div class="col-md-6">
-                    Hala targowa Orbi<br />
+                    Hala targowa <br />
+                    Orbi<br />
                     66-400 Gorzów Wlkp.<br />
                     ul. Marcinkowskiego 90A
                   </div>
                   <div class="col-md-6">
+                    Centrum handlowe <br />
                     Kupiec Gorzowski<br />
                     66-400 Gorzów Wlkp.<br />
                     ul. Witosa 50
@@ -182,20 +195,30 @@
             </div>
             <div class="col-lg-6 contact-form">
               <div class="col-lg-12">
-                <form>
+                <form role="form" id="contactForm" class="contact-form" data-toggle="validator">
                   <div class="form-group">
-                    <label for="inputName">Imię i nazwisko</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Podaj imię i nazwisko">
+                    <div class="controls">
+                      <label for="inputName">Imię i nazwisko</label>
+                      <input type="text" class="form-control" id="inputName" required data-error="Wpisz imię i nazwisko">
+                      <div class="help-block with-errors text-danger"></div>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputEmail">Adres email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Podaj adres email">
+                    <div class="controls">
+                      <label for="inputEmail">Adres email</label>
+                      <input type="email" class="form-control" id="inputEmail" required data-error="Wpisz adres email">
+                      <div class="help-block with-errors text-danger"></div>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputMessage">Treść wiadomości</label>
-                    <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                    <div class="controls">
+                      <label for="inputMessage">Treść wiadomości</label>
+                      <textarea class="form-control" id="inputMessage" rows="3" required data-error="Wpisz treść wiadomości"></textarea>
+                      <div class="help-block with-errors text-danger"></div>
+                    </div>
                   </div>
-                  <button type="submit" class="btn btn-lg btn-success oltex-button">Submit</button>
+                  <button type="submit" id="submit" class="btn btn-lg btn-success oltex-button col-lg-3">Wyślij</button>
+                  <div id="msgSubmit" class="h3 hidden centered"></div>
                 </form>
               </div>
             </div>
@@ -249,7 +272,9 @@
     <script src="js/scrollPosStyler.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/google_maps.js"></script>
-    <!-- <script type="text/javascript" src="js/cssrefresh.js"></script> -->
+    <script type="text/javascript" src="js/cssrefresh.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKxCErWjEDfsKjCOLaWU98VHO1Cp0NDbI&callback=initMap"
     async defer></script>

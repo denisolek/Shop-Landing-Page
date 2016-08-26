@@ -15,11 +15,12 @@ img {
 /* Global changes */
 .oltex-button {
   background-color: #e68900;
-  border-color: #e68900; }
+  border-color: #e68900;
+  border-radius: 0; }
 
 .oltex-button:hover {
-  background-color: #d68000;
-  border-color: #d68000; }
+  background-color: #d68000 !important;
+  border-color: #d68000 !important; }
 
 .oltex-button .btn-success.active, .btn-success:active {
   background-color: #d68000 !important;
@@ -28,6 +29,9 @@ img {
 .oltex-button .btn-success.focus, .btn-success:focus {
   background-color: #d68000 !important;
   border-color: #d68000 !important; }
+
+.form-control {
+  border-radius: 0; }
 
 /* Navbar */
 @media (max-width: 992px) {
@@ -112,7 +116,7 @@ img {
     padding-bottom: 3px; } }
 /* Main */
 #main {
-  background: url(../img/bg_img4.jpg) center center no-repeat;
+  background: url(../img/bg_img8.png) center center no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -124,6 +128,8 @@ img {
   margin: 0 auto;
   text-align: center;
   color: #fff; }
+  #main-caption h1 {
+    font-weight: 400; }
 
 .section-content {
   padding: 6rem 0;
@@ -131,6 +137,12 @@ img {
 
 .bg-dark {
   background: #eaeaea; }
+
+/* Offer section */
+#offer .offer-image {
+  height: 300px;
+  width: 300px;
+  margin-top: 10px; }
 
 /* Licences section */
 #owl-licences .item img {
@@ -154,7 +166,11 @@ img {
     height: 32px; }
   #contact textarea {
     min-height: 150px;
-    resize: none; } }
+    resize: none; }
+  #contact .help-block {
+    font-size: 0.8rem; }
+  #contact #msgSubmit {
+    margin-top: 30px; } }
 .centered {
   text-align: center; }
 
