@@ -1,8 +1,6 @@
-// Navbar scroll active
+// Navigation scroll
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-
-    //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
@@ -11,16 +9,17 @@ $(document).ready(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
-
         var target = this.hash,
             menu = target;
         $target = $(target);
+        console.log($target.offset().top);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
+            'scrollTop': $target.offset().top-60
+        }, 900, 'easeInOutExpo', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
+        event.preventDefault();
     });
 });
 
@@ -29,7 +28,7 @@ function onScroll(event){
     $('#exCollapsingNavbar2 a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top - 60 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#exCollapsingNavbar2 ul li a').removeClass("active");
             currLink.addClass("active");
         }
