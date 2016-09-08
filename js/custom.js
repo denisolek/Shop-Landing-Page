@@ -12,7 +12,6 @@ $(document).ready(function () {
         var target = this.hash,
             menu = target;
         $target = $(target);
-        console.log($target.offset().top);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top-60
         }, 900, 'easeInOutExpo', function () {
@@ -28,7 +27,7 @@ function onScroll(event){
     $('#exCollapsingNavbar2 a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top - 60 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top - 65 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#exCollapsingNavbar2 ul li a').removeClass("active");
             currLink.addClass("active");
         }

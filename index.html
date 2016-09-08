@@ -7,10 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Oltex</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Owl carousel -->
+    <!-- Custom libs -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
@@ -18,6 +18,19 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- WOW JS init -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-dark bg-faded navbar-custom navbar-fixed-top sps">
       <button class="navbar-toggler hidden-lg-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +40,7 @@
       <div class="collapse navbar-toggleable-md pull-lg-right" id="exCollapsingNavbar2">
         <ul class="nav navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#main">Home</a>
+            <a class="nav-link active" href="#main">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">O nas</a>
@@ -49,7 +62,7 @@
     </nav>
 
     <div id="main">
-      <div id="main-caption">
+      <div id="main-caption" class="wow fadeInUp" data-wow-duration="2s">
         <h1 class="display-3">Lorem ipsum dolor sit amet.</h1>
         <p class="lead">Nihil accusam et his, nec ad movet veritus.</p>
         <a href="" class="btn btn-lg btn-success oltex-button">Quod tibique</a>
@@ -61,11 +74,11 @@
         <div class="row">
           <div class="section-content">
             <div class="col-lg-12">
-              <h2>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</h2>
-              <p class="lead">
+              <h2 class="wow fadeInUp" data-wow-delay=".2s">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</h2>
+              <p class="lead wow fadeInUp" data-wow-delay=".4s">
                 Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
               </p>
-              <p>
+              <p class="wow fadeInUp" data-wow-delay=".6s">
                 Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.
               </p>
             </div>
@@ -80,19 +93,19 @@
           <div class="section-content">
             <div class="col-lg-12">
               <div class="col-lg-8 offset-lg-2 centered">
-                <h1>Oferta</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1 class="wow fadeInUp" data-wow-delay=".2s">Oferta</h1>
+                <p class="lead wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="hidden-md-down">
-                <div class="col-lg-4"><img src="img/offer/ceramika.png" alt="offer.ceramika" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/koce.png" alt="offer.koce" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/reczniki.png" alt="offer.reczniki" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/kwiaty.png" alt="offer.kwiaty" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/narzuty.png" alt="offer.narzuty" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/obrusy.png" alt="offer.obrusy" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/posciel_przescieradla.png" alt="offer.posciel_przescieradla" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/poduszki_poszewki.png" alt="offer.poduszki_poszewki" class="offer-image"></div>
-                <div class="col-lg-4"><img src="img/offer/koldry_poduszki.png" alt="offer.koldry_poduszki" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="1s"><img src="img/offer/ceramika.png" alt="offer.ceramika" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInUp test" data-wow-delay=".2s"><img src="img/offer/koce.png" alt="offer.koce" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="1s"><img src="img/offer/reczniki.png" alt="offer.reczniki" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="1s"><img src="img/offer/kwiaty.png" alt="offer.kwiaty" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInUp test" data-wow-delay=".2s"><img src="img/offer/narzuty.png" alt="offer.narzuty" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="1s"><img src="img/offer/obrusy.png" alt="offer.obrusy" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="1s"><img src="img/offer/posciel_przescieradla.png" alt="offer.posciel_przescieradla" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInUp test" data-wow-delay=".2s"><img src="img/offer/poduszki_poszewki.png" alt="offer.poduszki_poszewki" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="1s"><img src="img/offer/koldry_poduszki.png" alt="offer.koldry_poduszki" class="offer-image"></div>
               </div>
             </div>
             <div class="col-lg-12">
@@ -108,10 +121,10 @@
         <div class="row">
           <div class="section-content">
             <div class="col-lg-6">
-              <h3>Suspendisse a pellentesque dui, non felis.</h3>
-              <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3 class="wow fadeInUp" data-wow-delay=".2s">Suspendisse a pellentesque dui, non felis.</h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay=".8s">
               <div id="owl-licences" class="owl-carousel owl-theme">
                 <div class="item"><img src="img/licences/licencje_1.png" alt="Licences.1"></div>
                 <div class="item"><img src="img/licences/licencje_2.png" alt="Licences.2"></div>
@@ -128,14 +141,14 @@
       <div class="container">
         <div class="row">
           <div class="section-content">
-            <div class="col-lg-6 hidden-md-down">
-              <img src="img/logo_allegro.png" alt="macbook" style="">
+            <div class="col-lg-6 hidden-md-down wow fadeInLeft" data-wow-delay=".8s">
+              <img src="img/logo_allegro.png" alt="shop.allegro" style="">
             </div>
             <div class="col-lg-5 offset-lg-1">
-              <h6>The wow factor</h6>
-              <h2>Australians wouldn't give a Startup.logo for anything else.</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.</p>
-              <a href="" class="btn btn-lg btn-success oltex-button">Zobacz nasze aukcje</a>
+              <h6 class="wow fadeInUp" data-wow-delay=".2s">The wow factor</h6>
+              <h2 class="wow fadeInUp" data-wow-delay=".4s">Australians wouldn't give a Startup.logo for anything else.</h2>
+              <p class="lead wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.</p>
+              <a href="" class="btn btn-lg btn-success oltex-button wow fadeInRight" data-wow-delay="1.2s">Zobacz nasze aukcje</a>
             </div>
           </div>
         </div>
@@ -148,12 +161,12 @@
         <div class="row">
           <div class="section-content">
             <div class="col-lg-6 offset-lg-3 centered">
-              <h1>Kontakt</h1>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h1 class="wow fadeInUp" data-wow-delay=".2s">Kontakt</h1>
+              <p class="lead wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="row col-lg-12 contact-info">
               <!-- Phone numbers -->
-              <div class="contact-box col-md-3">
+              <div class="contact-box col-md-3 wow fadeInLeft" data-wow-delay=".2s">
                 <div class="content-box col-md-12">
                   <div class="col-md-12">
                     <h4><img src="img/icon_phone.png" class="icon-img" alt="icon.phone"> Telefon</h4>
@@ -165,7 +178,7 @@
                 </div>
               </div>
               <!-- Email -->
-              <div class="contact-box col-md-3">
+              <div class="contact-box col-md-3 wow fadeInUp" data-wow-delay=".4s">
                 <div class="content-box col-md-12">
                   <div class="col-md-12">
                     <h4><img src="img/icon_envelope.png" class="icon-img" alt="icon.envelope"> Email</h4>
@@ -176,7 +189,7 @@
                 </div>
               </div>
               <!-- Addresses -->
-              <div class="contact-box col-md-6">
+              <div class="contact-box col-md-6 wow fadeInRight" data-wow-delay=".6s">
                 <div class="content-box col-md-12">
                   <div class="col-md-12">
                     <h4><img src="img/icon_map.png" class="icon-img" alt="icon.map"> Adresy sklepów</h4>
@@ -199,33 +212,33 @@
             <div class="col-lg-6 contact-form">
               <div class="col-lg-12">
                 <form role="form" id="contactForm" class="contact-form" data-toggle="validator">
-                  <div class="form-group">
+                  <div class="form-group wow fadeInUp">
                     <div class="controls">
                       <label for="inputName">Imię i nazwisko</label>
                       <input type="text" class="form-control" id="inputName" required data-error="Wpisz imię i nazwisko">
                       <div class="help-block with-errors text-danger"></div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group wow fadeInUp">
                     <div class="controls">
                       <label for="inputEmail">Adres email</label>
                       <input type="email" class="form-control" id="inputEmail" required data-error="Wpisz adres email">
                       <div class="help-block with-errors text-danger"></div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group wow fadeInUp">
                     <div class="controls">
                       <label for="inputMessage">Treść wiadomości</label>
                       <textarea class="form-control" id="inputMessage" rows="3" required data-error="Wpisz treść wiadomości"></textarea>
                       <div class="help-block with-errors text-danger"></div>
                     </div>
                   </div>
-                  <button type="submit" id="submit" class="btn btn-lg btn-success oltex-button col-lg-3">Wyślij</button>
+                  <button type="submit" id="submit" class="btn btn-lg btn-success oltex-button col-lg-3 wow fadeInUp">Wyślij</button>
                   <div id="msgSubmit" class="h3 hidden centered"></div>
                 </form>
               </div>
             </div>
-            <div id="map-container" class="col-lg-6"></div>
+            <div id="map-container" class="col-lg-6 wow fadeInRight" data-wow-delay=".6s"></div>
           </div>
         </div>
       </div>
@@ -234,36 +247,12 @@
     <footer id="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            &copy; Denis Olek<br />
+          <div class="col-md-6 copyright">
+            &copy; 2016 Denis Olek<br />
             All rights Reserved.
           </div>
-          <div class="col-md-2">
-            <h6>Our product</h6>
-            <ul class="list-unstyled">
-              <li><a href=""></a>Features</li>
-              <li><a href=""></a>Solutions</li>
-              <li><a href=""></a>Plains</li>
-              <li><a href=""></a>Sign in</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h6>Our team</h6>
-            <ul class="list-unstyled">
-              <li><a href=""></a>About</li>
-              <li><a href=""></a>Highlights</li>
-              <li><a href=""></a>Investors</li>
-              <li><a href=""></a>Partners</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h6>Other things</h6>
-            <ul class="list-unstyled">
-              <li><a href=""></a>Jobs</li>
-              <li><a href=""></a>Contact</li>
-              <li><a href=""></a>FAQ</li>
-            </ul>
-          </div>
+          <div class="col-md-6 social">
+            <div class="fb-page" data-href="https://www.facebook.com/oltex24/" data-width="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/oltex24/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/oltex24/">OLTEX</a></blockquote></div>          </div>
         </div>
       </div>
     </footer>
