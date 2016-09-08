@@ -15,7 +15,7 @@ function initMap() {
             '<div id="bodyContent">'+
             '<p>Punkt umieszczony w hali targowej <b><i>Orbi</i></b>.<br />' +
             '<b>ul. Marcinkowskiego 90A</b><br />'+
-            '<img src="img/orbi.png" style="width: 237px; height: auto;" align="middle"></img>'
+            '<img src="img/shop_orbi.png" style="width: 237px; height: auto;" align="middle"></img>'
             '</div>'+
             '</div>';
 
@@ -30,7 +30,7 @@ function initMap() {
             '<div id="bodyContent">'+
             '<p>Punkt umieszczony w centrum handlowym <br /><b><i>Kupiec Gorzowski</i></b>.<br />' +
             '<b>ul. Witosa 50</b><br />'+
-            '<img src="img/kupiec.jpg" style="width: 237px; height: auto;" align="middle"></img>'
+            '<img src="img/shop_kupiec.jpg" style="width: 237px; height: auto;" align="middle"></img>'
             '</div>'+
             '</div>';
 

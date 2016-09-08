@@ -24,11 +24,11 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('#exCollapsingNavbar2 a').each(function () {
+    $('#collapsingNavbar a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top - 65 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#exCollapsingNavbar2 ul li a').removeClass("active");
+            $('#collapsingNavbar ul li a').removeClass("active");
             currLink.addClass("active");
         }
         else{
