@@ -1,6 +1,6 @@
 /* Color variables */
-html,
-body {
+body,
+html {
   height: 100%; }
 
 body {
@@ -22,28 +22,20 @@ img {
   background-color: #d68000 !important;
   border-color: #d68000 !important; }
 
-.oltex-button .btn-success.active, .btn-success:active {
+.btn-success:active,
+.oltex-button .btn-success.active {
   background-color: #d68000 !important;
   border-color: #d68000 !important; }
 
-.oltex-button .btn-success.focus, .btn-success:focus {
+.btn-success:focus,
+.oltex-button .btn-success.focus {
   background-color: #d68000 !important;
   border-color: #d68000 !important; }
 
 .form-control {
   border-radius: 0; }
 
-/* Navbar */
-@media (max-width: 992px) {
-  .navbar .navbar-nav > .nav-item {
-    float: none;
-    margin-left: .1rem; }
-
-  .navbar .navbar-nav {
-    float: none !important; }
-
-  .navbar .collapse.in, .navbar .collapsing {
-    clear: both; } }
+/* NAVBAR */
 .navbar-custom {
   background-color: #212121;
   border-radius: 0;
@@ -60,13 +52,24 @@ img {
   .navbar-custom .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.7); }
   .navbar-custom .navbar-nav .nav-link:hover {
-    -moz-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    transition: all .3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
     color: #fff; }
 
 @media (max-width: 992px) {
+  .navbar .navbar-nav > .nav-item {
+    float: none;
+    margin-left: 0.1rem; }
+
+  .navbar .navbar-nav {
+    float: none !important; }
+
+  .navbar .collapse.in,
+  .navbar .collapsing {
+    clear: both; }
+
   .navbar-brand {
     margin-top: -12px;
     margin-bottom: -3px; }
@@ -74,7 +77,7 @@ img {
       width: 177px;
       height: 64px; }
 
-  #exCollapsingNavbar2 {
+  #collapsingNavbar {
     border-top: 1px solid #663d00; } }
 @media (min-width: 992px) {
   .navbar-custom {
@@ -104,21 +107,19 @@ img {
       border-radius: 1px;
       margin: auto;
       height: 3px;
-      width: 0px;
+      width: 0;
       background: transparent;
-      transition: width .5s ease, background-color .5s ease; }
+      transition: width 0.5s ease, background-color 0.5s ease; }
     .navbar-custom .nav-link.active:after {
       width: 100%;
-      background: #e68900; } }
-@media (min-width: 992px) {
+      background: #e68900; }
+
   .navbar-custom.sps--blw {
     background-color: #212121;
-    padding: 0px;
-    padding-top: 3px;
-    padding-bottom: 3px; } }
-/* Main */
+    padding: 3px 0; } }
+/* MAIN SECTION */
 #main {
-  background: url(../img/bg_img.png) center center no-repeat;
+  background: url("../img/bg_img.png") center center no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -140,48 +141,65 @@ img {
 .bg-dark {
   background: #eaeaea; }
 
-/* Offer section */
+@media (max-width: 992px) {
+  #main-caption h1 {
+    font-size: 2.5rem; } }
+/* OFFER SECTION */
 #offer .offer-image {
   height: 300px;
   width: 300px;
   margin-top: 10px; }
-#offer .test {
+#offer .top-image {
   position: relative;
   z-index: 5; }
+#offer .offer-mobile {
+  display: flex;
+  display: -webkit-flex;
+  /* Safari 8 */
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  /* Safari 8 */
+  justify-content: center;
+  -webkit-justify-content: center;
+  /* Safari 8 */ }
+  #offer .offer-mobile .offer-image {
+    height: 155px;
+    width: 155px;
+    margin: 5px; }
 
-/* Licences section */
+/* LICENCES SECTION */
 #owl-licences .item img {
   display: block;
   width: 100%;
   height: auto; }
 
-/* Shop section */
+/* SHOP SECTION */
 #shop img {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* Contact section */
-@media (min-width: 992px) {
-  #contact h2 {
-    margin-bottom: 30px; }
-  #contact .contact-box {
-    padding: 20px; }
-  #contact #map-container {
-    height: 400px;
-    margin-top: 20px; }
-  #contact .map-image {
-    width: 20px; }
-  #contact .icon-img {
-    width: 32px;
-    height: 32px; }
-  #contact textarea {
-    min-height: 150px;
-    resize: none; }
-  #contact .help-block {
-    font-size: 0.8rem; }
-  #contact #msgSubmit {
-    margin-top: 30px; } }
+/* CONTACT SECTION */
+#contact h2 {
+  margin-bottom: 30px; }
+#contact .contact-box {
+  padding: 20px; }
+#contact #map-container {
+  height: 400px;
+  margin-top: 20px; }
+#contact .map-image {
+  width: 20px; }
+#contact .icon-img {
+  width: 32px;
+  height: 32px; }
+#contact textarea {
+  min-height: 150px;
+  resize: none; }
+#contact .help-block {
+  font-size: 0.8rem; }
+#contact #msgSubmit {
+  margin-top: 30px; }
+
 .centered {
   text-align: center; }
 
