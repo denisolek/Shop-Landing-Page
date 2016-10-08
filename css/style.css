@@ -212,9 +212,14 @@ img {
   overflow: auto; }
   #site-footer .social {
     text-align: center; }
-  #site-footer .copyright {
-    padding-top: 5rem; }
 
+@media (min-width: 992px) {
+  .copyright {
+    padding-top: 5.5rem; } }
+@media (max-width: 767px) {
+  .copyright {
+    text-align: center;
+    padding-bottom: 1rem; } }
 #site-footer h6 {
   color: #718FA9; }
 
