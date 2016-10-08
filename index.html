@@ -4,28 +4,272 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <title>Oltex</title>
+    <!-- Custom libs -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext" rel="stylesheet">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- FB Plugin -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- WOW JS init -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-dark bg-faded navbar-custom navbar-fixed-top sps">
+      <button class="navbar-toggler hidden-lg-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <a class="navbar-brand" ><img src="img/oltex_light.png" alt="oltex.logo" width=331 height=119 ></a>
+      <div class="collapse navbar-toggleable-md pull-lg-right" id="collapsingNavbar">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#main">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">O nas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offer">Oferta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#licenses">Licencje</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Sklep</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main">
+      <div id="main-caption" class="wow fadeInUp" data-wow-duration="2s">
+        <h1 class="display-3">Lorem ipsum dolor sit amet.</h1>
+        <p class="lead">Nihil accusam et his, nec ad movet veritus.</p>
+        <a href="" class="btn btn-lg btn-success oltex-button">Quod tibique</a>
+      </div>
+    </div>
+
+    <!-- SECTION ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-content">
+            <div class="col-lg-12">
+              <h2 class="wow fadeInUp" data-wow-delay=".2s">Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</h2>
+              <p class="lead wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
+              <p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION OFFER -->
+    <section id="offer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="section-content">
+            <div class="col-lg-12">
+              <div class="col-lg-8 offset-lg-2 centered">
+                <h1 class="wow fadeInUp" data-wow-delay=".2s">Oferta</h1>
+                <p class="lead wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="hidden-md-down">
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="1s"><img src="img/offer/ceramika.png" alt="offer.ceramika" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInUp top-image" data-wow-delay=".2s"><img src="img/offer/koce.png" alt="offer.koce" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="1s"><img src="img/offer/reczniki.png" alt="offer.reczniki" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="1s"><img src="img/offer/kwiaty.png" alt="offer.kwiaty" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInUp top-image" data-wow-delay=".2s"><img src="img/offer/narzuty.png" alt="offer.narzuty" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="1s"><img src="img/offer/obrusy.png" alt="offer.obrusy" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="1s"><img src="img/offer/posciel_przescieradla.png" alt="offer.posciel_przescieradla" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInUp top-image" data-wow-delay=".2s"><img src="img/offer/poduszki_poszewki.png" alt="offer.poduszki_poszewki" class="offer-image"></div>
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="1s"><img src="img/offer/koldry_poduszki.png" alt="offer.koldry_poduszki" class="offer-image"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 hidden-lg-up offer-mobile">
+              <div class="wow fadeInUp"><img src="img/offer/ceramika.png" alt="offer.ceramika" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/koce.png" alt="offer.koce" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/reczniki.png" alt="offer.reczniki" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/kwiaty.png" alt="offer.kwiaty" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/narzuty.png" alt="offer.narzuty" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/obrusy.png" alt="offer.obrusy" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/posciel_przescieradla.png" alt="offer.posciel_przescieradla" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/poduszki_poszewki.png" alt="offer.poduszki_poszewki" class="offer-image"></div>
+              <div class="wow fadeInUp"><img src="img/offer/koldry_poduszki.png" alt="offer.koldry_poduszki" class="offer-image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION LICENCES -->
+    <section id="licenses">
+      <div class="container">
+        <div class="row">
+          <div class="section-content">
+            <div class="col-lg-6">
+              <h3 class="wow fadeInUp" data-wow-delay=".2s">Suspendisse a pellentesque dui, non felis.</h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay=".8s">
+              <div id="owl-licences" class="owl-carousel owl-theme">
+                <div class="item"><img src="img/licences/licences_1.png" alt="Licences.1"></div>
+                <div class="item"><img src="img/licences/licences_2.png" alt="Licences.2"></div>
+                <div class="item"><img src="img/licences/licences_3.png" alt="Licences.3"></div>
+                <div class="item"><img src="img/licences/licences_4.png" alt="Licences.4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SHOP -->
+    <section id="shop" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="section-content">
+            <div class="col-lg-6 hidden-md-down wow fadeInLeft" data-wow-delay=".8s">
+              <img src="img/logo_allegro.png" alt="shop.allegro" style="">
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <h6 class="wow fadeInUp" data-wow-delay=".2s">The wow factor</h6>
+              <h2 class="wow fadeInUp" data-wow-delay=".4s">Australians wouldn't give a Startup.logo for anything else.</h2>
+              <p class="lead wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.</p>
+              <a href="http://allegro.pl/listing/user/listing.php?us_id=42974812" target="_blank" class="btn btn-lg btn-success oltex-button wow fadeInRight" data-wow-delay="1.2s">Zobacz nasze aukcje</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-content">
+            <div class="col-lg-6 offset-lg-3 centered">
+              <h1 class="wow fadeInUp" data-wow-delay=".2s">Kontakt</h1>
+              <p class="lead wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="row col-lg-12 contact-info">
+              <!-- Phone numbers -->
+              <div class="contact-box col-md-3 wow fadeInLeft" data-wow-delay=".2s">
+                <div class="content-box col-md-12">
+                  <div class="col-md-12">
+                    <h4><img src="img/icon_phone.png" class="icon-img" alt="icon.phone"> Telefon</h4>
+                  </div>
+                  <div class="col-md-12">
+                    +48 510 297 579<br />
+                    +48 501 187 033
+                  </div>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="contact-box col-md-3 wow fadeInUp" data-wow-delay=".4s">
+                <div class="content-box col-md-12">
+                  <div class="col-md-12">
+                    <h4><img src="img/icon_envelope.png" class="icon-img" alt="icon.envelope"> Email</h4>
+                  </div>
+                  <div class="col-md-12">
+                    oltex24@op.pl
+                  </div>
+                </div>
+              </div>
+              <!-- Addresses -->
+              <div class="contact-box col-md-6 wow fadeInRight" data-wow-delay=".6s">
+                <div class="content-box col-md-12">
+                  <div class="col-md-12">
+                    <h4><img src="img/icon_map.png" class="icon-img" alt="icon.map"> Adresy sklepów</h4>
+                  </div>
+                  <div class="col-md-6">
+                    Hala targowa <br />
+                    Orbi<br />
+                    66-400 Gorzów Wlkp.<br />
+                    ul. Marcinkowskiego 90A
+                  </div>
+                  <div class="visible-md-down">
+                    <hr>
+                  </div>
+                  <div class="col-md-6">
+                    Centrum handlowe <br />
+                    Kupiec Gorzowski<br />
+                    66-400 Gorzów Wlkp.<br />
+                    ul. Witosa 50
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 contact-form">
+              <div class="col-lg-12">
+                <form role="form" id="contactForm" class="contact-form" data-toggle="validator">
+                  <div class="form-group wow fadeInUp">
+                    <div class="controls">
+                      <label for="inputName">Imię i nazwisko</label>
+                      <input type="text" class="form-control" id="inputName" required data-error="Wpisz imię i nazwisko">
+                      <div class="help-block with-errors text-danger"></div>
+                    </div>
+                  </div>
+                  <div class="form-group wow fadeInUp">
+                    <div class="controls">
+                      <label for="inputEmail">Adres email</label>
+                      <input type="email" class="form-control" id="inputEmail" required data-error="Wpisz adres email">
+                      <div class="help-block with-errors text-danger"></div>
+                    </div>
+                  </div>
+                  <div class="form-group wow fadeInUp">
+                    <div class="controls">
+                      <label for="inputMessage">Treść wiadomości</label>
+                      <textarea class="form-control" id="inputMessage" rows="3" required data-error="Wpisz treść wiadomości"></textarea>
+                      <div class="help-block with-errors text-danger"></div>
+                    </div>
+                  </div>
+                  <button type="submit" id="submit" class="btn btn-lg btn-success oltex-button col-lg-3 wow fadeInUp">Wyślij</button>
+                  <div id="msgSubmit" class="h3 hidden centered"></div>
+                </form>
+              </div>
+            </div>
+            <div id="map-container" class="col-lg-6 wow fadeInRight" data-wow-delay=".6s"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            &copy; 2016 Denis Olek<br />
+            All rights Reserved.
+          </div>
+          <div class="col-md-6 social">
+            <div class="fb-page" data-href="https://www.facebook.com/oltex24/" data-width="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/oltex24/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/oltex24/">OLTEX</a></blockquote></div>          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS LIBS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollPosStyler.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/google_maps.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKxCErWjEDfsKjCOLaWU98VHO1Cp0NDbI&callback=initMap"
+    async defer></script>
   </body>
 </html>
